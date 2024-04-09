@@ -2,6 +2,9 @@ import { FcGoogle} from "react-icons/fc";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Qzone1 from "../../../assets/qZone1.png"
+import Qzone2 from "../../../assets/qZone2.png"
+import Qzone3 from "../../../assets/qZone3.png"
 const RightSideNav = () => {
     return (
         <div>
@@ -42,6 +45,9 @@ const RightSideNav = () => {
             {/* Q-Zone */}
             <div>
                 <h2 className="text-xl font-semibold mb-5">Q-Zone</h2>
+                <img src={Qzone1} alt="" />
+                <img src={Qzone2} alt="" />
+                <img src={Qzone3} alt="" />
             </div>
         </div>
     );
