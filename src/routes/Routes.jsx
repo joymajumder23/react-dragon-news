@@ -16,11 +16,12 @@ import News from "../pages/News/News";
         {
             path: "/",
             element: <Home></Home>,
-            loader: () => fetch("news.json")
+            loader: () => fetch("/news.json")
         },
         {
           path: "/news/:id",
-          element: <News></News>
+          element: <News></News>,
+          loader: () => fetch("/news.json")
         },
         {
           path: "/login",
