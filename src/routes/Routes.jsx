@@ -7,6 +7,7 @@ import Error from "../error/Error";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import News from "../pages/News/News";
+import PrivateRoute from "./PrivateRoute";
   const router = createBrowserRouter([
     {
       path: "/",
@@ -20,7 +21,7 @@ import News from "../pages/News/News";
         },
         {
           path: "/news/:id",
-          element: <News></News>,
+          element: <PrivateRoute><News></News></PrivateRoute>,
           loader: () => fetch("/news.json")
         },
         {
